@@ -143,15 +143,32 @@ export default function EnvelopeCover() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.4 }}
               >
-                <span className="badge-day">Friday</span>
-                <span className="badge-num">20</span>
-                <span className="badge-mmy">November 2026</span>
+                <span className="badge-day">Saturday</span>
+                <span className="badge-num">12</span>
+                <span className="badge-mmy">September 2026</span>
+              </motion.div>
+
+              <motion.div
+                className="inv-venue"
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.6 }}
+              >
+                <p className="venue-name">Basilico Wedding Hall</p>
+                <a
+                  className="venue-address"
+                  href="https://maps.app.goo.gl/Qxb6UeKBate1KsNx7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Al Mahallah Al Kubra Road Before Carrefour ↗
+                </a>
               </motion.div>
 
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ duration: 1, delay: 1.6 }}
+                transition={{ duration: 1, delay: 1.8 }}
                 className="ornament-line"
               >
                 ─────── ✦ ───────
