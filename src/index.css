@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Cormorant Garamond', serif;
   background: #FFFFFF;
-  color: #7A2848;
+  color: #c03058;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -27,11 +27,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #F49BAB;
+  background: #e898a8;
   border-radius: 3px;
 }
 
 ::selection {
-  background: rgba(208, 64, 112, 0.3);
-  color: #B82850;
+  background: rgba(216, 72, 104, 0.3);
+  color: #c03058;
 }

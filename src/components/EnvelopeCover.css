@@ -13,24 +13,29 @@
 
 .env-scene,
 .inv-hero {
-  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: #FFFFFF;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
 }
 
 /* ===========================
    ENVELOPE SCENE
    =========================== */
 
-.env-particles { position: absolute; inset: 0; pointer-events: none; }
+.env-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 .env-particle {
   position: absolute;
-  width: 5px; height: 5px;
-  background: #F06090;
+  width: 5px;
+  height: 5px;
+  background: #e898a8;
   border-radius: 50%;
 }
 
@@ -42,7 +47,9 @@
   z-index: 1;
 }
 
-.env-wrap { perspective: 800px; }
+.env-wrap {
+  perspective: 800px;
+}
 
 .env-body {
   position: relative;
@@ -53,22 +60,27 @@
 .env-back {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, #F0D060, #E0C040 50%, #F0D060);
+  background: linear-gradient(145deg, #f0d060, #e0c040 50%, #f0d060);
   border-radius: 4px;
-  box-shadow: 0 16px 40px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.3);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .wax-seal {
-  width: 56px; height: 56px;
+  width: 56px;
+  height: 56px;
   background: radial-gradient(circle, #8b2500, #5c1a00);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,.4), inset 0 1px 2px rgba(255,255,255,.15);
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15);
   z-index: 5;
 }
 .wax-seal span {
@@ -81,9 +93,11 @@
 
 .env-flap {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 50%;
-  background: linear-gradient(180deg, #F5D868, #E8C848);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, #f5d868, #e8c848);
   clip-path: polygon(0 0, 50% 100%, 100% 0);
   transform-origin: top center;
   z-index: 3;
@@ -99,9 +113,10 @@
 
 .env-invite-text {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.8;
-  color: #B82850;
+  color: #c03058;
   letter-spacing: 2px;
   font-style: italic;
 }
@@ -109,22 +124,24 @@
 .env-open-btn {
   padding: 14px 44px;
   background: transparent;
-  border: 1px solid #D04070;
-  color: #D04070;
+  background: #d84868;
+  color: #ffffff;
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   letter-spacing: 4px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  border: 1px solid transparent;
 }
 .env-open-btn:hover {
-  background: linear-gradient(135deg, #F06090, #E04878);
-  color: #FFFFFF;
-  border-color: transparent;
+  background: white;
+  color: #d84868;
+  border-color: #d84868;
 }
 .env-open-btn:disabled {
-  opacity: .4;
+  opacity: 0.4;
   cursor: default;
 }
 
@@ -132,7 +149,10 @@
    HERO
    =========================== */
 
-.inv-hero-inner { text-align: center; padding: 20px; }
+.inv-hero-inner {
+  text-align: center;
+  padding: 20px;
+}
 
 .ornament-line {
   display: flex;
@@ -146,14 +166,14 @@
   display: block;
   width: 50px;
   height: 1px;
-  background: #F06090;
-  opacity: .6;
+  background: #e898a8;
+  opacity: 0.6;
 }
 
 .ornament-symbol {
-  color: #F06090;
+  color: #e898a8;
   font-size: 14px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .inv-subtitle {
@@ -161,7 +181,7 @@
   font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #B82850;
+  color: #c03058;
   margin-bottom: 16px;
 }
 
@@ -172,14 +192,20 @@
   margin-bottom: 16px;
 }
 
-
 .inv-names-hero span:not(.inv-amp) {
   font-family: 'Playfair Display', serif;
   font-size: clamp(42px, 9vw, 76px);
   font-weight: 400;
   letter-spacing: 8px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #B82850 0%, #D04878 30%, #E06888 50%, #D04878 70%, #B82850 100%);
+  background: linear-gradient(
+    135deg,
+    #c03058 0%,
+    #d85070 30%,
+    #e86880 50%,
+    #d85070 70%,
+    #c03058 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -188,7 +214,7 @@
 .inv-amp {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(36px, 7vw, 60px);
-  color: #D04070;
+  color: #d84868;
   line-height: 1;
   margin: 22px 0 4px 0;
 }
@@ -198,7 +224,7 @@
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #B82850;
+  color: #c03058;
   margin-bottom: 28px;
 }
 
@@ -214,14 +240,14 @@
   font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #D04070;
+  color: #d84868;
   font-weight: 600;
 }
 .badge-num {
   font-family: 'Playfair Display', serif;
   font-size: 76px;
   font-weight: 300;
-  color: #E05878;
+  color: #e86880;
   line-height: 1;
 }
 .badge-mmy {
@@ -229,7 +255,7 @@
   font-size: 16px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #B82850;
+  color: #c03058;
   font-weight: 600;
 }
 
@@ -240,7 +266,7 @@
 .venue-name {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
-  color: #D04070;
+  color: #d84868;
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
@@ -248,19 +274,21 @@
 .venue-address {
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
-  color: #B82850;
+  color: #c03058;
   letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: 1px solid rgba(208,64,112,.3);
+  border-bottom: 1px solid rgba(168, 80, 96, 0.3);
   padding-bottom: 2px;
-  transition: color .3s, border-color .3s;
+  transition:
+    color 0.3s,
+    border-color 0.3s;
   display: inline-flex;
   align-items: center;
   gap: 5px;
 }
 .venue-address:hover {
-  color: #D04070;
-  border-color: #D04070;
+  color: #d84868;
+  border-color: #d84868;
 }
 
 .arrow-icon {
@@ -269,15 +297,72 @@
 }
 
 /* ===========================
+   CORNER FLOWERS
+   =========================== */
+
+.corner-tl,
+.corner-br {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.corner-tl {
+  top: 0;
+  left: 0;
+  rotate: 90deg;
+}
+
+.corner-br {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  rotate: 90deg;
+}
+
+/* ===========================
    RESPONSIVE
    =========================== */
 
+@media (max-width: 768px) {
+  .corner-tl,
+  .corner-br {
+    width: 200px;
+  }
+  .inv-names-hero span:not(.inv-amp) {
+    font-size: clamp(36px, 8vw, 60px);
+  }
+  .inv-amp {
+    font-size: clamp(30px, 6vw, 50px);
+  }
+}
+
 @media (max-width: 480px) {
-  .env-body { width: 260px; height: 180px; }
-  .wax-seal { width: 46px; height: 46px; }
-  .wax-seal span { font-size: 11px; }
-  .env-open-btn { padding: 12px 32px; font-size: 13px; letter-spacing: 3px; }
-  .env-invite-text { font-size: 15px; }
+  .env-body {
+    width: 260px;
+    height: 180px;
+  }
+  .wax-seal {
+    width: 46px;
+    height: 46px;
+  }
+  .wax-seal span {
+    font-size: 11px;
+  }
+  .env-open-btn {
+    padding: 12px 32px;
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+  .env-invite-text {
+    font-size: 15px;
+  }
+  .corner-tl,
+  .corner-br {
+    width: 120px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -318,5 +403,9 @@
   }
   .inv-hero-inner {
     padding: 16px;
+  }
+  .corner-tl,
+  .corner-br {
+    width: 130px;
   }
 }
