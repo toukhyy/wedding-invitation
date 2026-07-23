@@ -67,7 +67,7 @@ export default function EnvelopeCover() {
                 transition={{ duration: 0.3 }}
               >
                 <p className="env-invite-text">
-                  Request the honour of your presence<br />at their wedding celebration
+                  We're getting married and we'd love<br />for you to be there to celebrate with us
                 </p>
                 <motion.button
                   className="env-open-btn"
@@ -134,7 +134,7 @@ export default function EnvelopeCover() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
               >
-                Are getting married
+                Invite you to celebrate their wedding day.
               </motion.p>
 
               <motion.div
