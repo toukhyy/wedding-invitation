@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   background:
-    radial-gradient(ellipse at center, #FFFFFF 0%, #FEF2F5 70%);
+    radial-gradient(ellipse at center, #FFFFFF 0%, #FFFBFC 70%);
   position: relative;
   overflow: hidden;
 }
@@ -54,9 +54,9 @@
 .env-back {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, #c9a96e, #a88a52 50%, #c9a96e);
+  background: linear-gradient(145deg, #F0D060, #E0C040 50%, #F0D060);
   border-radius: 4px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.2);
+  box-shadow: 0 16px 40px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,14 +77,14 @@
   font-size: 13px;
   font-weight: 600;
   color: #f5e6d3;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .env-flap {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 50%;
-  background: linear-gradient(180deg, #d4b87a, #c9a96e);
+  background: linear-gradient(180deg, #F5D868, #E8C848);
   clip-path: polygon(0 0, 50% 100%, 100% 0);
   transform-origin: top center;
   z-index: 3;
@@ -172,7 +172,6 @@
   align-items: center;
   margin-bottom: 16px;
 }
-.inv-names-hero{}
 
 
 .inv-names-hero span:not(.inv-amp) {
@@ -181,7 +180,7 @@
   font-weight: 400;
   letter-spacing: 8px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #C85A7A 0%, #FACCD5 30%, #FEF0F2 50%, #FACCD5 70%, #C85A7A 100%);
+  background: linear-gradient(135deg, #7A2848 0%, #A84068 30%, #C86088 50%, #A84068 70%, #7A2848 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -190,10 +189,9 @@
 .inv-amp {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(36px, 7vw, 60px);
-  color: #C85A7A;
-  opacity: .8;
+  color: #A84068;
   line-height: 1;
-  margin: 12px 0 4px 0;
+  margin: 22px 0 4px 0;
 }
 
 .inv-tagline {
