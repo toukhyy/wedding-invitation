@@ -93,6 +93,22 @@ export default function EnvelopeCover() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
+            <motion.img
+              src="/corner-flower.png"
+              className="corner-tl"
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.9 }}
+            />
+            <motion.img
+              src="/corner-flower.png"
+              className="corner-br"
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.9 }}
+            />
             <motion.div
               className="inv-hero-inner"
               initial={{ opacity: 0 }}
