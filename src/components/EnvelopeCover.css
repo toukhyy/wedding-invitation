@@ -17,8 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:
-    radial-gradient(ellipse at center, #FFFFFF 0%, #FFFBFC 70%);
+  background: #FFFFFF;
   position: relative;
   overflow: hidden;
 }
@@ -31,7 +30,7 @@
 .env-particle {
   position: absolute;
   width: 5px; height: 5px;
-  background: #F49BAB;
+  background: #F06090;
   border-radius: 50%;
 }
 
@@ -102,7 +101,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 17px;
   line-height: 1.8;
-  color: #7A2848;
+  color: #B82850;
   letter-spacing: 2px;
   font-style: italic;
 }
@@ -110,8 +109,8 @@
 .env-open-btn {
   padding: 14px 44px;
   background: transparent;
-  border: 1px solid #A84068;
-  color: #A84068;
+  border: 1px solid #D04070;
+  color: #D04070;
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   letter-spacing: 4px;
@@ -120,8 +119,8 @@
   transition: all .4s ease;
 }
 .env-open-btn:hover {
-  background: linear-gradient(135deg, #F49BAB, #D47A93);
-  color: #5C1A34;
+  background: linear-gradient(135deg, #F06090, #E04878);
+  color: #FFFFFF;
   border-color: transparent;
 }
 .env-open-btn:disabled {
@@ -147,14 +146,14 @@
   display: block;
   width: 50px;
   height: 1px;
-  background: #F49BAB;
-  opacity: .5;
+  background: #F06090;
+  opacity: .6;
 }
 
 .ornament-symbol {
-  color: #F49BAB;
+  color: #F06090;
   font-size: 14px;
-  opacity: .5;
+  opacity: .6;
 }
 
 .inv-subtitle {
@@ -162,7 +161,7 @@
   font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #7A2848;
+  color: #B82850;
   margin-bottom: 16px;
 }
 
@@ -180,7 +179,7 @@
   font-weight: 400;
   letter-spacing: 8px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #7A2848 0%, #A84068 30%, #C86088 50%, #A84068 70%, #7A2848 100%);
+  background: linear-gradient(135deg, #B82850 0%, #D04878 30%, #E06888 50%, #D04878 70%, #B82850 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -189,7 +188,7 @@
 .inv-amp {
   font-family: 'Great Vibes', cursive;
   font-size: clamp(36px, 7vw, 60px);
-  color: #A84068;
+  color: #D04070;
   line-height: 1;
   margin: 22px 0 4px 0;
 }
@@ -199,7 +198,7 @@
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #7A2848;
+  color: #B82850;
   margin-bottom: 28px;
 }
 
@@ -207,29 +206,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   margin-bottom: 16px;
 }
 .badge-day {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #A84068;
+  color: #D04070;
+  font-weight: 600;
 }
 .badge-num {
   font-family: 'Playfair Display', serif;
-  font-size: 68px;
+  font-size: 76px;
   font-weight: 300;
-  color: #C85A7A;
+  color: #E05878;
   line-height: 1;
 }
 .badge-mmy {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #7A2848;
+  color: #B82850;
+  font-weight: 600;
 }
 
 .inv-venue {
@@ -239,7 +240,7 @@
 .venue-name {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
-  color: #A84068;
+  color: #D04070;
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
@@ -247,10 +248,10 @@
 .venue-address {
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
-  color: #7A2848;
+  color: #B82850;
   letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: 1px solid rgba(168,64,104,.3);
+  border-bottom: 1px solid rgba(208,64,112,.3);
   padding-bottom: 2px;
   transition: color .3s, border-color .3s;
   display: inline-flex;
@@ -258,8 +259,8 @@
   gap: 5px;
 }
 .venue-address:hover {
-  color: #A84068;
-  border-color: #A84068;
+  color: #D04070;
+  border-color: #D04070;
 }
 
 .arrow-icon {
@@ -296,14 +297,14 @@
     letter-spacing: 3px;
   }
   .badge-num {
-    font-size: 52px;
+    font-size: 60px;
   }
   .badge-day {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 4px;
   }
   .badge-mmy {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 4px;
   }
   .venue-name {
