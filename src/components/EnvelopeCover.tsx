@@ -76,7 +76,7 @@ export default function EnvelopeCover() {
                   whileTap={{ scale: 0.96 }}
                   disabled={opening}
                 >
-                  Open Invitation ✉
+                  Open Invitation
                 </motion.button>
               </motion.div>
             </motion.div>
@@ -105,7 +105,7 @@ export default function EnvelopeCover() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="ornament-line"
               >
-                ─────── ✦ ───────
+                <span className="ornament-dash" /><span className="ornament-symbol">✦</span><span className="ornament-dash" />
               </motion.div>
 
               <motion.p
@@ -161,7 +161,10 @@ export default function EnvelopeCover() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Al Mahallah Al Kubra Road Before Carrefour ↗
+                  Al Mahallah Al Kubra Road Before Carrefour
+                  <svg className="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </a>
               </motion.div>
 
@@ -171,7 +174,7 @@ export default function EnvelopeCover() {
                 transition={{ duration: 1, delay: 1.8 }}
                 className="ornament-line"
               >
-                ─────── ✦ ───────
+                <span className="ornament-dash" /><span className="ornament-symbol">✦</span><span className="ornament-dash" />
               </motion.div>
             </motion.div>
           </motion.div>

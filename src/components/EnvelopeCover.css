@@ -135,11 +135,25 @@
 .inv-hero-inner { text-align: center; padding: 20px; }
 
 .ornament-line {
-  font-size: 15px;
-  color: #c9a96e;
-  letter-spacing: 12px;
-  opacity: .5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   margin: 16px 0;
+}
+
+.ornament-dash {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #c9a96e;
+  opacity: .5;
+}
+
+.ornament-symbol {
+  color: #c9a96e;
+  font-size: 14px;
+  opacity: .5;
 }
 
 .inv-subtitle {
@@ -240,10 +254,18 @@
   border-bottom: 1px solid rgba(201,169,110,.3);
   padding-bottom: 2px;
   transition: color .3s, border-color .3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .venue-address:hover {
   color: #c9a96e;
   border-color: #c9a96e;
+}
+
+.arrow-icon {
+  flex-shrink: 0;
+  margin-top: 1px;
 }
 
 /* ===========================
@@ -254,4 +276,47 @@
   .env-body { width: 260px; height: 180px; }
   .wax-seal { width: 46px; height: 46px; }
   .wax-seal span { font-size: 11px; }
+  .env-open-btn { padding: 12px 32px; font-size: 13px; letter-spacing: 3px; }
+  .env-invite-text { font-size: 15px; }
+}
+
+@media (max-width: 390px) {
+  .inv-names-hero span:not(.inv-amp) {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+  .inv-amp {
+    font-size: 30px;
+  }
+  .inv-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+  .inv-tagline {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .badge-num {
+    font-size: 52px;
+  }
+  .badge-day {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+  .badge-mmy {
+    font-size: 13px;
+    letter-spacing: 4px;
+  }
+  .venue-name {
+    font-size: 18px;
+  }
+  .venue-address {
+    font-size: 13px;
+  }
+  .ornament-dash {
+    width: 30px;
+  }
+  .inv-hero-inner {
+    padding: 16px;
+  }
 }
