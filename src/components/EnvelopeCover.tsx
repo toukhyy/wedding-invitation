@@ -162,6 +162,7 @@ export default function EnvelopeCover() {
                 <span className="badge-day">Saturday</span>
                 <span className="badge-num">12</span>
                 <span className="badge-mmy">September 2026</span>
+                <span className="badge-time">7:00 PM — 11:00 PM</span>
               </motion.div>
 
               <motion.div

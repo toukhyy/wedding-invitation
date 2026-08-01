@@ -259,6 +259,13 @@
   color: #c03058;
   font-weight: 600;
 }
+.badge-time {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: #d84868;
+  margin-top: 6px;
+}
 
 .inv-venue {
   margin-bottom: 16px;
@@ -392,6 +399,10 @@
   .badge-mmy {
     font-size: 14px;
     letter-spacing: 4px;
+  }
+  .badge-time {
+    font-size: 13px;
+    letter-spacing: 3px;
   }
   .venue-name {
     font-size: 18px;
