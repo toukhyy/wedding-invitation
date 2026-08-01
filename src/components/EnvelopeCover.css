@@ -113,7 +113,7 @@
 }
 
 .env-invite-text {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
@@ -127,7 +127,7 @@
   background: transparent;
   background: #d84868;
   color: #ffffff;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -178,7 +178,7 @@
 }
 
 .inv-subtitle {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -221,7 +221,7 @@
 }
 
 .inv-tagline {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -237,7 +237,7 @@
   margin-bottom: 16px;
 }
 .badge-day {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -252,7 +252,7 @@
   line-height: 1;
 }
 .badge-mmy {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -260,7 +260,7 @@
   font-weight: 600;
 }
 .badge-time {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   letter-spacing: 4px;
   color: #d84868;
@@ -280,7 +280,7 @@
 }
 
 .venue-address {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   font-size: 15px;
   color: #c03058;
   letter-spacing: 1px;
@@ -344,6 +344,7 @@
   }
   .inv-amp {
     font-size: clamp(30px, 6vw, 50px);
+    margin: 14px 0 0 0;
   }
 }
 
